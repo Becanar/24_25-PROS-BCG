@@ -1,4 +1,5 @@
 import org.apache.commons.net.ftp.FTPClient;
+
 import java.io.IOException;
 
 public class Actividad2 {
@@ -15,7 +16,7 @@ public class Actividad2 {
             System.out.println("Nos conectamos a " + servidor);
             ftpClient.connect(servidor);
 
-            
+
             int respuesta = ftpClient.getReplyCode();
             if (respuesta != 220) {  // Código de éxito para la conexión: 220
                 System.out.println("No se pudo conectar al servidor FTP. Código de respuesta: " + respuesta);

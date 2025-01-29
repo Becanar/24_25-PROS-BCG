@@ -1,3 +1,5 @@
+package org.example;
+
 import java.io.*;
 
 public class EstructuraFicheros implements Serializable {
